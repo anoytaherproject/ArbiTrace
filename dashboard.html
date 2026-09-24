@@ -1,0 +1,12 @@
+{% extends "base.html" %}{% block title %}Dashboard • ArbiTrace{% endblock %}{% block content %}
+<section class="dashhead"><div><span class="pill">INVESTOR DASHBOARD</span><h1>Halo, {{ user.name }}</h1><p class="muted">Data berikut adalah simulasi UI.</p></div><div class="balance"><span>Portfolio Realtime</span><strong>${{ "%.2f"|format(stats.portfolio) }}</strong></div></section>
+<h3>Overview</h3><section class="grid">
+<div class="card stat"><span>Total Deposit</span><b>${{ "%.2f"|format(stats.deposit) }}</b></div>
+<div class="card stat"><span>Total Investment</span><b>${{ "%.2f"|format(stats.investment) }}</b></div>
+<div class="card stat"><span>Total Profit</span><b>${{ "%.2f"|format(stats.profit) }}</b></div>
+<div class="card stat"><span>Total Withdraw</span><b>${{ "%.2f"|format(stats.withdraw) }}</b></div>
+<div class="card stat"><span>Referral</span><b>{{ stats.referrals }}</b></div>
+<div class="card stat"><span>Status</span><b>Active</b></div>
+</section>
+<h3>Quick Actions</h3><section class="features"><div class="card"><b>＋ Deposit</b><p>Modul siap dihubungkan ke database.</p></div><div class="card"><b>↗ Invest</b><p>Kelola produk dan posisi investasi.</p></div><div class="card"><b>⇩ Withdraw</b><p>Pengajuan dan riwayat penarikan.</p></div></section>
+{% endblock %}

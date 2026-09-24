@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block content %}
+<section class="hero">
+<div><span class="pill">INVESTMENT ANALYTICS</span><h1>Track smarter.<br><em>Build with clarity.</em></h1>
+<p>Dashboard modern untuk memantau portofolio, transaksi, performa, dan aktivitas akun dalam satu tampilan.</p>
+<div class="actions"><a class="btn" href="{{ url_for('login') }}">Buka Dashboard</a><a class="ghost" href="{{ url_for('register') }}">Buat Akun</a></div></div>
+<div class="glass"><div class="muted">PORTFOLIO DEMO</div><div class="money">$1,422.95</div><div class="up">+7.4% simulasi periode</div><div class="chart">▁▂▃▂▄▅▄▆▇▆█</div></div>
+</section>
+<section class="features"><div class="card"><b>Portfolio Tracking</b><p>Ringkasan saldo dan performa.</p></div><div class="card"><b>Transaction Center</b><p>Deposit dan withdrawal terstruktur.</p></div><div class="card"><b>Security Ready</b><p>Struktur siap integrasi Supabase Auth/RLS.</p></div></section>
+{% endblock %}
